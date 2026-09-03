@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Data Cleaning & Preparation | DecodeLabs</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">DataClean<span>+</span></div>
+
+            <div class="nav-links">
+                <a href="#overview">Overview</a>
+                <a href="#cleaning">Cleaning</a>
+                <a href="#results">Results</a>
+                <a href="#files">Files</a>
+            </div>
+
+            <button id="themeToggle" class="theme-btn">🌙</button>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <p class="badge">DECODELABS • DATA ANALYTICS INTERNSHIP</p>
+
+            <h1>
+                Data Cleaning
+                <span>& Preparation</span>
+            </h1>
+
+            <p class="hero-text">
+                Cleaning and preparing an e-commerce dataset using
+                Python and Pandas for reliable data analysis.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#results" class="btn primary-btn">
+                    View Results
+                </a>
+
+                <a href="Data_Cleaning_Project.ipynb"
+                   class="btn secondary-btn"
+                   target="_blank">
+                    View Notebook
+                </a>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- Overview -->
+        <section id="overview" class="section">
+
+            <div class="section-heading">
+                <p class="small-title">PROJECT OVERVIEW</p>
+                <h2>Preparing Data for Analysis</h2>
+            </div>
+
+            <p class="description">
+                This project focuses on cleaning and preparing an
+                e-commerce dataset for further data analysis.
+                The dataset was inspected, validated, and cleaned
+                using Python and Pandas.
+            </p>
+
+        </section>
+
+
+        <!-- Statistics -->
+        <section class="section">
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-icon">📊</div>
+                    <h3>1,200</h3>
+                    <p>Total Records</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">📋</div>
+                    <h3>14</h3>
+                    <p>Original Columns</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">✓</div>
+                    <h3>0</h3>
+                    <p>Duplicate Rows</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">🔑</div>
+                    <h3>0</h3>
+                    <p>Duplicate Order IDs</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Objectives -->
+        <section class="section">
+
+            <div class="section-heading">
+                <p class="small-title">OBJECTIVES</p>
+                <h2>What Was Done?</h2>
+            </div>
+
+            <div class="objectives-grid">
+
+                <div class="objective-card">
+                    <span>01</span>
+                    <h3>Missing Values</h3>
+                    <p>
+                        Identified missing values and handled
+                        them appropriately.
+                    </p>
+                </div>
+
+                <div class="objective-card">
+                    <span>02</span>
+                    <h3>Duplicates</h3>
+                    <p>
+                        Checked duplicate records and duplicate
+                        Order IDs.
+                    </p>
+                </div>
+
+                <div class="objective-card">
+                    <span>03</span>
+                    <h3>Date Validation</h3>
+                    <p>
+                        Checked the dataset for incorrectly
+                        formatted dates.
+                    </p>
+                </div>
+
+                <div class="objective-card">
+                    <span>04</span>
+                    <h3>Numeric Validation</h3>
+                    <p>
+                        Validated Quantity, UnitPrice, ItemsInCart
+                        and TotalPrice.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Cleaning -->
+        <section id="cleaning" class="section">
+
+            <div class="section-heading">
+                <p class="small-title">DATA CLEANING</p>
+                <h2>Cleaning Process</h2>
+            </div>
+
+            <div class="cleaning-list">
+
+                <div class="cleaning-item">
+                    <div class="check">✓</div>
+
+                    <div>
+                        <h3>Missing Coupon Codes</h3>
+
+                        <p>
+                            The CouponCode column contained
+                            <strong>309 missing values</strong>.
+                            These were replaced with
+                            <strong>NO_COUPON</strong>.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="cleaning-item">
+                    <div class="check">✓</div>
+
+                    <div>
+                        <h3>Duplicate Records</h3>
+
+                        <p>
+                            No duplicate rows or duplicate
+                            Order IDs were found.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="cleaning-item">
+                    <div class="check">✓</div>
+
+                    <div>
+                        <h3>Date Validation</h3>
+
+                        <p>
+                            The Date column was checked for
+                            invalid or incorrectly formatted dates.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="cleaning-item">
+                    <div class="check">✓</div>
+
+                    <div>
+                        <h3>Numeric Validation</h3>
+
+                        <p>
+                            Numeric columns were checked for
+                            invalid values.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Results -->
+        <section id="results" class="section">
+
+            <div class="section-heading">
+                <p class="small-title">FINAL VALIDATION</p>
+                <h2>Quality Check</h2>
+            </div>
+
+            <div class="result-box">
+
+                <div class="result-row">
+                    <span>Duplicate Rows</span>
+                    <strong>0 ✓</strong>
+                </div>
+
+                <div class="result-row">
+                    <span>Duplicate Order IDs</span>
+                    <strong>0 ✓</strong>
+                </div>
+
+                <div class="result-row">
+                    <span>Invalid Dates</span>
+                    <strong>0 ✓</strong>
+                </div>
+
+                <div class="result-row">
+                    <span>Invalid Numeric Values</span>
+                    <strong>0 ✓</strong>
+                </div>
+
+                <div class="result-row">
+                    <span>Missing Values After Cleaning</span>
+                    <strong>0 ✓</strong>
+                </div>
+
+            </div>
+
+            <div class="success-message">
+                <span>✓</span>
+
+                <div>
+                    <h3>Dataset Successfully Cleaned</h3>
+
+                    <p>
+                        The cleaned dataset is ready for further
+                        data analysis and visualization.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Technologies -->
+        <section class="section">
+
+            <div class="section-heading">
+                <p class="small-title">TECHNOLOGY</p>
+                <h2>Tools Used</h2>
+            </div>
+
+            <div class="tech-list">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Google Colab</span>
+                <span>Microsoft Excel</span>
+                <span>GitHub</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+        </section>
+
+
+        <!-- Files -->
+        <section id="files" class="section">
+
+            <div class="section-heading">
+                <p class="small-title">PROJECT FILES</p>
+                <h2>Explore the Project</h2>
+            </div>
+
+            <div class="file-buttons">
+
+                <a
+                    href="Data_Cleaning_Project.ipynb"
+                    class="btn primary-btn"
+                    target="_blank">
+                    📓 View Notebook
+                </a>
+
+                <a
+                    href="cleaned_dataset_public.xlsx"
+                    class="btn secondary-btn"
+                    download>
+                    📥 Download Dataset
+                </a>
+
+                <a
+                    href="https://github.com/latasrigogoi/DecodeLabs-Internship/tree/main/Data-Cleaning-Project"
+                    class="btn secondary-btn"
+                    target="_blank">
+                    💻 GitHub Repository
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>DataClean+</h3>
+
+            <p>
+                Data Cleaning & Preparation
+            </p>
+
+            <p class="copyright">
+                DecodeLabs Internship • Data Analytics • 2026
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
